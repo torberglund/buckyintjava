@@ -14,7 +14,27 @@ public class bucky {
 
 	for(String x : morethings)
 		list2.add(x);
-	for(int i=0; i<list1.size(); i++)
+
+	//print list1
+	for(int i=0; i<list1.size(); i++){
 		System.out.printf("%s ", list1.get(i));
 	};
+
+	editList(list1,list2);
+	System.out.println();
+
+	//print list1
+	for(int i=0; i<list1.size(); i++)
+		System.out.printf("%s ", list1.get(i));
+
+	};
+
+	public static void editList(Collection<String> l1,Collection<String>l2) {
+		Iterator<String> it = l1.iterator();
+		while(it.hasNext()){
+			if(l2.contains(it.next()))
+				it.remove();
+		};
+	};
+
 };
