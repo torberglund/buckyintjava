@@ -9,7 +9,7 @@ public class MethodExample {
 
 
 	}
-
+	/*
 	public static void printMe(Integer [] i) {
 		for(Integer x :i )
 			System.out.printf("%s ",x);
@@ -19,6 +19,14 @@ public class MethodExample {
 		public static void printMe(Character [] i) {
 		for(Character x :i )
 			System.out.printf("%s ",x);
+			System.out.println();
+	}
+	*/
+
+	//generic method
+	public static <T> void printMe(T[] x) {
+		for(T i :x )
+			System.out.printf("%s ",i);
 			System.out.println();
 	}
 }
