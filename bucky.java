@@ -22,6 +22,14 @@ public class bucky {
 	printMe(list1);
 	reverseMe(list1);
 
+		LinkedList<String> thelist = new LinkedList<String>(Arrays.asList(things));
+	thelist.add("punfk");
+	thelist.addFirst("firstthing");
+
+	//convert back to array
+	String [] stuff = thelist.toArray(new String[thelist.size()]);
+	for (String x : stuff)
+		System.out.printf("%s", x);
 
 	};
 
@@ -40,6 +48,7 @@ public class bucky {
 		while(bobby.hasPrevious())
 			System.out.printf("%s ", bobby.previous());
 	}
+
 
 
 };
