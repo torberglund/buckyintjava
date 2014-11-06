@@ -1,10 +1,14 @@
 public class bucky {
 	public static void main (String [] args) {
-		String [] words = {"funk", "chunk", "furry", "baconator"};
-		//StartsWith
-		for(String w : words){
-			if(w.startsWith("fu"))
-				System.out.println(w + " starts with fu");
-		}
-	}
-}
+	System.out.println(fact(4)+"");
+	};
+
+	//fact
+	public static long fact(long n) {
+		if (n<=1)
+			return 1;
+		else
+			return n*fact(n-1);
+
+	};
+};
